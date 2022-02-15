@@ -1,0 +1,8 @@
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.csproj.AssemblyReference.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.csproj.SuggestedBindingRedirects.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.Form1.resources
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.csproj.GenerateResource.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.AssemblyInfoInputs.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.AssemblyInfo.cs
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net472\Chax.csproj.CoreCompileInputs.cache

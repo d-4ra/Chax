@@ -1,0 +1,7 @@
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.csproj.AssemblyReference.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.Form1.resources
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.csproj.GenerateResource.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.AssemblyInfoInputs.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.AssemblyInfo.cs
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\netcoreapp3.1\Chax.csproj.CoreCompileInputs.cache
