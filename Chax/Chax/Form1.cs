@@ -29,6 +29,14 @@ namespace Chax
             foreach (FilterInfo filterInfo in filterInfoCollection)
                 cboDevice.Items.Add(filterInfo.Name);
             try { cboDevice.SelectedIndex = 0; } catch { cboDevice.Text = "No Camera Detected"; }
+            if(cboDevice.SelectedIndex > 0)
+            {
+                CaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
+                //CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.Start();
+                timerQRpic.Start();
+            }
+            
         }
     }
 }

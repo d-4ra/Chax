@@ -34,6 +34,15 @@
         "runtime": {
           "lib/AForge.Video.DirectShow.dll": {}
         }
+      },
+      "ZXing/2.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net20/zxing.dll": {}
+        },
+        "runtime": {
+          "lib/net20/zxing.dll": {}
+        }
       }
     }
   },
@@ -76,12 +85,27 @@
         "lib/AForge.Video.DirectShow.dll",
         "lib/AForge.Video.DirectShow.xml"
       ]
+    },
+    "ZXing/2.1.1": {
+      "sha512": "/FvWeSR8A5tVX+Lqxr3edWFEmibdU0v00z8tu4cG5DhSZe0VF8/GWX9JHAkbUpxi+A2cQhyaTIMmTYFYyUiGSg==",
+      "type": "package",
+      "path": "zxing/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/zxing.dll",
+        "lib/net20/zxing.pdb",
+        "readme.txt",
+        "zxing.2.1.1.nupkg.sha512",
+        "zxing.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "AForge.Video >= 2.2.5",
-      "AForge.Video.DirectShow >= 2.2.5"
+      "AForge.Video.DirectShow >= 2.2.5",
+      "ZXing >= 2.1.1"
     ]
   },
   "packageFolders": {
@@ -135,6 +159,10 @@
           "AForge.Video.DirectShow": {
             "target": "Package",
             "version": "[2.2.5, )"
+          },
+          "ZXing": {
+            "target": "Package",
+            "version": "[2.1.1, )"
           }
         },
         "imports": [
@@ -186,6 +214,16 @@
       "warningLevel": 1,
       "message": "Package 'AForge.Video.DirectShow 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "AForge.Video.DirectShow",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ZXing 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ZXing",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

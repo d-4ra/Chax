@@ -9,7 +9,8 @@
       "Chax/1.0.0": {
         "dependencies": {
           "AForge.Video": "2.2.5",
-          "AForge.Video.DirectShow": "2.2.5"
+          "AForge.Video.DirectShow": "2.2.5",
+          "ZXing": "2.1.1"
         },
         "runtime": {
           "Chax.dll": {}
@@ -44,6 +45,14 @@
             "fileVersion": "2.2.5.0"
           }
         }
+      },
+      "ZXing/2.1.1": {
+        "runtime": {
+          "lib/net20/zxing.dll": {
+            "assemblyVersion": "1.0.4727.18517",
+            "fileVersion": "1.0.4727.18517"
+          }
+        }
       }
     }
   },
@@ -73,6 +82,13 @@
       "sha512": "sha512-pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
       "path": "aforge.video.directshow/2.2.5",
       "hashPath": "aforge.video.directshow.2.2.5.nupkg.sha512"
+    },
+    "ZXing/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/FvWeSR8A5tVX+Lqxr3edWFEmibdU0v00z8tu4cG5DhSZe0VF8/GWX9JHAkbUpxi+A2cQhyaTIMmTYFYyUiGSg==",
+      "path": "zxing/2.1.1",
+      "hashPath": "zxing.2.1.1.nupkg.sha512"
     }
   }
 }

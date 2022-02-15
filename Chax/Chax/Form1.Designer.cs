@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cboDevice = new System.Windows.Forms.ComboBox();
+            this.timerQRpic = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // cboDevice
@@ -57,5 +59,6 @@
         #endregion
 
         private ComboBox cboDevice;
+        private System.Windows.Forms.Timer timerQRpic;
     }
 }
