@@ -32,9 +32,13 @@ namespace Chax
             if(cboDevice.SelectedIndex > 0)
             {
                 CaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
-                //CaptureDevice.NewFrame += CaptureDevice_NewFrame;
+                CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();
                 timerQRpic.Start();
+                void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+                {
+                    picQRscan.Image = (Bitmap)eventArgs.Frame.Clone();
+                }
             }
             
         }
