@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cboDevice = new System.Windows.Forms.ComboBox();
-            this.timerQRpic = new System.Windows.Forms.Timer(this.components);
-            this.picQRscan = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picQRscan)).BeginInit();
+            this.frameTimer = new System.Windows.Forms.Timer(this.components);
+            this.picBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cboDevice
@@ -43,27 +43,27 @@
             this.cboDevice.Size = new System.Drawing.Size(121, 23);
             this.cboDevice.TabIndex = 1;
             // 
-            // picQRscan
+            // picBox
             // 
-            this.picQRscan.Location = new System.Drawing.Point(135, 12);
-            this.picQRscan.Name = "picQRscan";
-            this.picQRscan.Size = new System.Drawing.Size(245, 219);
-            this.picQRscan.TabIndex = 2;
-            this.picQRscan.TabStop = false;
+            this.picBox.Location = new System.Drawing.Point(135, 12);
+            this.picBox.Name = "picBox";
+            this.picBox.Size = new System.Drawing.Size(245, 219);
+            this.picBox.TabIndex = 2;
+            this.picBox.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 441);
-            this.Controls.Add(this.picQRscan);
+            this.Controls.Add(this.picBox);
             this.Controls.Add(this.cboDevice);
             this.MaximumSize = new System.Drawing.Size(480, 480);
             this.MinimumSize = new System.Drawing.Size(480, 480);
             this.Name = "Form1";
             this.Text = "C-HACK";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picQRscan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -71,7 +71,7 @@
         #endregion
 
         private ComboBox cboDevice;
-        private System.Windows.Forms.Timer timerQRpic;
-        private PictureBox picQRscan;
+        private System.Windows.Forms.Timer frameTimer;
+        private PictureBox picBox;
     }
 }

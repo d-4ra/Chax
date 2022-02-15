@@ -22,25 +22,29 @@ namespace Chax
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Setting Video/Camera Variables
             FilterInfoCollection filterInfoCollection;
             VideoCaptureDevice CaptureDevice;
-
+            
+            //Filtering Available Cameras
             filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach (FilterInfo filterInfo in filterInfoCollection)
                 cboDevice.Items.Add(filterInfo.Name);
             try { cboDevice.SelectedIndex = 0; } catch { cboDevice.Text = "No Camera Detected"; }
+
+            //Starting Camera If Found
             if(cboDevice.SelectedIndex > 0)
             {
                 CaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();
-                timerQRpic.Start();
-                void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
-                {
-                    picQRscan.Image = (Bitmap)eventArgs.Frame.Clone();
-                }
+                frameTimer.Start();
             }
-            
+        }
+        //Update PictureBox To Camera, Each Frame
+        void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            picBox.Image = (Bitmap)eventArgs.Frame.Clone();
         }
     }
 }
