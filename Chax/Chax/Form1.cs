@@ -32,14 +32,14 @@ namespace Chax
                 cboDevice.Items.Add(filterInfo.Name);
             try { cboDevice.SelectedIndex = 0; } catch { cboDevice.Text = "No Camera Detected"; }
 
-            //Starting Camera If Found
-            if(cboDevice.SelectedIndex > 0)
+            //Starting Camera If Found, Else Close Application
+            try
             {
                 CaptureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
                 CaptureDevice.NewFrame += CaptureDevice_NewFrame;
                 CaptureDevice.Start();
                 frameTimer.Start();
-            }
+            } catch { this.Close(); }
         }
         //Update PictureBox To Camera, Each Frame
         void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)

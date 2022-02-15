@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "h4lTnZMoLA4HhkcnZJNwYfApbqGyyxK9cufr+2s4Gg/LhRhfpY/BoO5AoV3JTnTFqbciCAkCti7PBvgdafAYqQ==",
+  "dgSpecHash": "Eem0eUKkKSy0N58n1nHv16WSHx0q5LiZhiJdDvLg2FUHIN1whnlM3rr4STMNYClId229wIlsq2SBbV6imIBSrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\DaraM\\OneDrive\\Documents\\GitHub\\Chax\\Chax\\Chax\\Chax.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DaraM\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\DaraM\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\DaraM\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\DaraM\\.nuget\\packages\\zxing\\2.1.1\\zxing.2.1.1.nupkg.sha512"
+    "C:\\Users\\DaraM\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512"
   ],
   "logs": [
     {
@@ -36,16 +35,6 @@
       "warningLevel": 1,
       "message": "Package 'AForge.Video.DirectShow 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "AForge.Video.DirectShow",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ZXing 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "ZXing",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]
