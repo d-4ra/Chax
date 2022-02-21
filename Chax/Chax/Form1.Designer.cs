@@ -38,16 +38,16 @@
             // cboDevice
             // 
             this.cboDevice.FormattingEnabled = true;
-            this.cboDevice.Location = new System.Drawing.Point(129, 264);
+            this.cboDevice.Location = new System.Drawing.Point(148, 375);
             this.cboDevice.Name = "cboDevice";
-            this.cboDevice.Size = new System.Drawing.Size(121, 23);
+            this.cboDevice.Size = new System.Drawing.Size(215, 23);
             this.cboDevice.TabIndex = 1;
             // 
             // picBox
             // 
-            this.picBox.Location = new System.Drawing.Point(135, 12);
+            this.picBox.Location = new System.Drawing.Point(12, 12);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(245, 219);
+            this.picBox.Size = new System.Drawing.Size(440, 257);
             this.picBox.TabIndex = 2;
             this.picBox.TabStop = false;
             // 
@@ -55,6 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(464, 441);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.cboDevice);
