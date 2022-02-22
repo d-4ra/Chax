@@ -32,24 +32,36 @@
             this.cboDevice = new System.Windows.Forms.ComboBox();
             this.frameTimer = new System.Windows.Forms.Timer(this.components);
             this.picBox = new System.Windows.Forms.PictureBox();
+            this.labelUI = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cboDevice
             // 
             this.cboDevice.FormattingEnabled = true;
-            this.cboDevice.Location = new System.Drawing.Point(148, 375);
+            this.cboDevice.Location = new System.Drawing.Point(12, 406);
             this.cboDevice.Name = "cboDevice";
             this.cboDevice.Size = new System.Drawing.Size(215, 23);
             this.cboDevice.TabIndex = 1;
             // 
             // picBox
             // 
+            this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBox.Location = new System.Drawing.Point(12, 12);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(440, 257);
+            this.picBox.Size = new System.Drawing.Size(440, 303);
             this.picBox.TabIndex = 2;
             this.picBox.TabStop = false;
+            // 
+            // labelUI
+            // 
+            this.labelUI.AutoSize = true;
+            this.labelUI.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelUI.Location = new System.Drawing.Point(402, 412);
+            this.labelUI.Name = "labelUI";
+            this.labelUI.Size = new System.Drawing.Size(50, 20);
+            this.labelUI.TabIndex = 3;
+            this.labelUI.Text = "CHAX";
             // 
             // Form1
             // 
@@ -57,6 +69,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(464, 441);
+            this.Controls.Add(this.labelUI);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.cboDevice);
             this.MaximumSize = new System.Drawing.Size(480, 480);
@@ -66,6 +79,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -74,5 +88,6 @@
         private ComboBox cboDevice;
         private System.Windows.Forms.Timer frameTimer;
         private PictureBox picBox;
+        private Label labelUI;
     }
 }

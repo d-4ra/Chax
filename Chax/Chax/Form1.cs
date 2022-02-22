@@ -20,6 +20,11 @@ namespace Chax
             InitializeComponent();
         }
 
+        [System.Runtime.InteropServices.DllImport("kernel32.dll")]
+        private static extern IntPtr GetConsoleWindow();
+        [System.Runtime.InteropServices.DllImport("User32.dll")]
+        private static extern bool ShowWindow(IntPtr hWnd, int cmdsShow);
+
         private void Form1_Load(object sender, EventArgs e)
         {
             Print("......", 1000);
@@ -89,7 +94,7 @@ namespace Chax
 
         void CorrectConsoleProgress()
         {
-            if (i == 130) //Manual Wait
+            if (i == 160) //Manual Wait
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Print("Visualising Synced", 40);
@@ -111,7 +116,9 @@ namespace Chax
                 Print("-Camera Bugged-",40);
                 Print(".\n.\n.\n.\n.", 30);
                 Print("Exiting Quietly", 40);
-                Application.Exit();
+                Print("..", 600);
+                IntPtr hWnd = GetConsoleWindow();
+                ShowWindow(hWnd, 0);
             }
         }
     }
