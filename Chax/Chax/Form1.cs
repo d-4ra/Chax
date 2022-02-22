@@ -45,9 +45,12 @@ namespace Chax
                 CaptureDevice.Start();
                 frameTimer.Start();
             } catch {
-                //Console.WriteLine("------------------------------");
-                //Print("Lucky Error - Camera not found\n.\n.\n.\n.\n.", 45);
-                //Environment.Exit(0);
+                Console.WriteLine("------------------------------");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Print("Lucky Error - Camera not found", 45);
+                Console.ForegroundColor = ConsoleColor.White;
+                Print(".\n.\n.\n.\n.", 45);
+                Environment.Exit(0);
                 this.Close();
             }
             Console.ForegroundColor = ConsoleColor.Blue;
