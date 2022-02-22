@@ -111,7 +111,7 @@ namespace Chax
                 Print("-Camera Bugged-",40);
                 Print(".\n.\n.\n.\n.", 30);
                 Print("Exiting Quietly", 40);
-                this.Close();
+                Application.Exit();
             }
         }
     }
