@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cboDevice = new System.Windows.Forms.ComboBox();
             this.frameTimer = new System.Windows.Forms.Timer(this.components);
             this.picBox = new System.Windows.Forms.PictureBox();
@@ -72,6 +73,7 @@
             this.Controls.Add(this.labelUI);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.cboDevice);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(480, 480);
             this.MinimumSize = new System.Drawing.Size(480, 480);
             this.Name = "Form1";
