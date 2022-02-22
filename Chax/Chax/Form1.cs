@@ -68,12 +68,24 @@ namespace Chax
                 }
                 Console.WriteLine();
             }
+            
         }
         //Every Start-up Event, above^^^
         //Every Constant Event Below,
+        public int i = 0;
         void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs) //Update PictureBox To Camera, Each Frame
         {
             picBox.Image = (Bitmap)eventArgs.Frame.Clone();
+            i++;
+            CorrectConsoleProgress();
+        }
+
+        void CorrectConsoleProgress()
+        {
+            if (i == 1)
+            {
+
+            }
         }
     }
 }
