@@ -53,6 +53,7 @@ namespace Chax
             Print("Camera Found", 40);
             Print("..", 500);
             Print("Starting Camera Sync", 50);
+            Print("...", 500);
             Print("Sync Completed", 40);
             Print("Visualising", 40);
             Print(".\n.", 650);
@@ -81,11 +82,11 @@ namespace Chax
 
         void CorrectConsoleProgress()
         {
-            if (i == 70) //Manual Wait
+            if (i == 110) //Manual Wait
             {
                 Print("Visualising Synced", 40);
                 Print("Executing Hack", 40);
-                Print("...", 650);
+                Print(".\n.\n.", 650);
                 static void Print(string text, int speed = 40)
                 {
                     foreach (char c in text)
@@ -97,8 +98,8 @@ namespace Chax
                 }
                 Print("Hack Complete", 40);
                 Print("-Camera Bugged-",40);
-                Print("Exiting Quietly", 40);
                 Print(".\n.", 650);
+                Print("Exiting Quietly", 40);
                 this.Close();
             }
         }
