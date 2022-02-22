@@ -19,3 +19,4 @@ C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\bin\Debug\net6.0-windows
 C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net6.0-windows\Chax.csproj.CopyComplete
 C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net6.0-windows\Chax.genruntimeconfig.cache
+C:\Users\DaraM\OneDrive\Documents\GitHub\Chax\Chax\Chax\obj\Debug\net6.0-windows\Chax.Properties.Resources.resources

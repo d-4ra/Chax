@@ -49,7 +49,7 @@
             this.picBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBox.Location = new System.Drawing.Point(12, 12);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(440, 303);
+            this.picBox.Size = new System.Drawing.Size(440, 318);
             this.picBox.TabIndex = 2;
             this.picBox.TabStop = false;
             // 
