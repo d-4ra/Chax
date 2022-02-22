@@ -37,7 +37,6 @@ namespace Chax
             try { cboDevice.SelectedIndex = 0; } catch { cboDevice.Text = "No Camera Detected"; }
             Print("Executing Start-up procedure", 40);
 
-
             //Starting Camera If Found, Else Close Application
             try
             {
@@ -52,13 +51,13 @@ namespace Chax
                 this.Close();
             }
             Print("Camera Found", 40);
-            Print(".", 500);
+            Print("..", 500);
             Print("Starting Camera Sync", 50);
             Print("Sync Completed", 40);
-            Print("..", 750);
+            Print("Visualising", 40);
+            Print(".\n.", 650);
 
             //Run Console Progress Output
-            Print("", 40);
             static void Print(string text, int speed = 40)
             {
                 foreach (char c in text)
@@ -82,9 +81,25 @@ namespace Chax
 
         void CorrectConsoleProgress()
         {
-            if (i == 1)
+            if (i == 70) //Manual Wait
             {
-
+                Print("Visualising Synced", 40);
+                Print("Executing Hack", 40);
+                Print("...", 650);
+                static void Print(string text, int speed = 40)
+                {
+                    foreach (char c in text)
+                    {
+                        Console.Write(c);
+                        System.Threading.Thread.Sleep(speed);
+                    }
+                    Console.WriteLine();
+                }
+                Print("Hack Complete", 40);
+                Print("-Camera Bugged-",40);
+                Print("Exiting Quietly", 40);
+                Print(".\n.", 650);
+                this.Close();
             }
         }
     }
